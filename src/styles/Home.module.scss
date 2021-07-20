@@ -1,4 +1,5 @@
 .container {
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -73,6 +74,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: -1;
 
     @media(max-width: 768px) {
         justify-self: center;
@@ -86,7 +88,6 @@
     width: auto;
     border-radius: 50%;
     box-sizing: border-box;
-    position: relative;
     background: linear-gradient(90deg, rgba(234,105,139,1) 0%, rgba(151,58,168,1) 100%);
     padding: 5px;
     animation: fadeInLeft 1s;

@@ -26,7 +26,7 @@ const BlogPage = () => {
     `)
 
     return (
-        <div>
+        <div className={styles.container}>
             <Layout>
                 <h1 className={styles.title}>Blog</h1>
                 <hr className={styles.divider}/>

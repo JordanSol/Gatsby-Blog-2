@@ -6,7 +6,7 @@ import * as styles from '../styles/About.module.scss'
 
 const AboutPage = () => {
     return (
-        <div>
+        <div className={styles.container}>
             <Layout>
                 <h1 className={styles.title}>About Me</h1>
                 <p>Hey there! I'm Jordan Freeman, a self taught web developer.
