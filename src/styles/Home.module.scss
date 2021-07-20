@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+
+    @media(max-width: 768px) {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+}
+
+.container h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    animation: fadeInLeft 1s;
+    display: block;
+    margin: 0em 0 2em 0;
+    
+    @media(max-width: 768px){
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+}
+
+.gradientText {
+    background-image: linear-gradient(90deg, rgb(173, 67, 192) 0%, rgba(234,105,139,1) 100%);
+    background-clip: text;
+    color: transparent;
+
+     h1 {
+         font-size: 3em;
+     }
+}
+
+.basics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em 0 4em 0;
+
+    @media(max-width: 768px) {
+        justify-content: center;
+    }
+}
+
+.developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(max-width: 768px) {
+        justify-self: center;
+        margin-bottom: 4em;
+    }
+}
+
+.portrait {
+    height: 15em;
+    display: block;
+    width: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    background: linear-gradient(90deg, rgba(234,105,139,1) 0%, rgba(151,58,168,1) 100%);
+    padding: 5px;
+    animation: fadeInLeft 1s;
+}
+
+.testimonial {
+    padding: 1.5em;
+    max-width: 50%;
+    animation: fadeInRight 1s;
+
+    h3 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+
+    span {
+        font-weight: 400;
+    }
+
+    @media(max-width:768px) {
+        max-width: none;
+    }
+}
+
+.contactButton {
+    padding: 0.5em 0.7em;
+    color: #d55d92;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid #d55d92;
+    border-radius: 3px;
+    transition: all 0.3s;
+    animation: fadeInLeft 1s;
+    
+    &:hover {
+        background-color: #983aa856;
+    }
+}
+
+.projects {
+    margin-top: 1.2rem;
+    text-align: center;
+    
+    h1 {
+        animation: fadeInRight 1s;
+    }
+}

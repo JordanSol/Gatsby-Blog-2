@@ -1,0 +1,41 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5em;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    width: 1.7em;
+    height: 1.7em;
+    margin-bottom: none;
+    color: #d295bf;
+}
+
+.list {
+    width: 15em;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: none;
+}
+
+.link {
+    color: whitesmoke;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin: none;
+    transition: all 0.3s;
+}
+
+.link:hover {
+    color: #d295bf;
+    padding: 3px 0.5em;
+}
+
+.activeLink {
+    border-bottom: 1px solid #d295bf;
+    padding-bottom: 3px;
+}
