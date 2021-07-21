@@ -18,8 +18,10 @@ const IndexPage = () => {
           </header>
           <div className={styles.basics}>
             <div className={styles.developer}>
-              <img className={styles.portrait} src={portrait} alt="Developer Portrait" />
-              <Link to="/contact" className={styles.contactButton}>Contact me →</Link>
+              <div className={styles.portraitContainer}>
+                <img className={styles.portrait} src={portrait} alt="Developer Portrait" />
+              </div>
+              <Link className={styles.contactButton} to="/contact">Contact me →</Link>
             </div>
             <div className={styles.testimonial}>
               <h3 className={styles.gradientText}>Testimonials</h3>

@@ -74,12 +74,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: -1;
 
     @media(max-width: 768px) {
         justify-self: center;
         margin-bottom: 4em;
     }
+}
+.portraitContainer {
+    z-index: -1;
 }
 
 .portrait {
@@ -127,8 +129,10 @@
     border-radius: 3px;
     transition: all 0.3s;
     animation: fadeInLeft 1s;
+    z-index: 1;
     
     &:hover {
+        cursor: pointer;
         background-color: #983aa856;
     }
 }

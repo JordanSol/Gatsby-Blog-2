@@ -1,3 +1,15 @@
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+
 .container {
     width: 100%;
     position: fixed;
@@ -17,46 +29,7 @@
     align-items: center;
     height: 2.5em;
     margin-bottom: 3rem;
-}
-
-.logo {
-    width: 1.7em;
-    height: 1.7em;
-    margin-bottom: none;
-    color: #d295bf;
-}
-
-.burgerMenu {
-    
-    @media(max-width: 768) {
-        display: inline-block;
-    }
-}
-
-.list {
-    width: 15em;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    margin: none;
-
-    @media(max-width: 768px) {
-        flex-flow: column nowrap;
-        align-self: flex-start;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 10em;
-        height: 100vh;
-        text-align: start;
-        padding: 2rem;
-        padding-top: 4em;
-        padding-bottom: 60vh;
-        background-color: #140925;
-        font-weight: bold;
-        z-index: 1;
-
-    }
+    z-index: 2;
 }
 
 .link {
@@ -68,11 +41,79 @@
 }
 
 .link:hover {
-    color: #d295bf;
+    color: #d55d92;
     padding: 3px 0.5em;
 }
 
+.logo {
+    width: 1.7em;
+    height: 1.7em;
+    margin-bottom: none;
+    color: #d295bf;
+}
+
+.burgerMenu {
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media(max-width: 768px) {
+        display: inline-block;
+    }
+}
+
+.hiddenList {
+    width: 20em;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: none;
+    
+    @media(max-width: 768px) {
+        animation: fadeInRight 0.5s;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10em;
+        height: 13em;
+        text-align: start;
+        padding: 0.5rem 0 1rem 0.8rem;
+        background-color: #140925;
+        border-left: 1px solid #d55d92;
+        border-bottom: 1px solid #d55d92;
+        border-radius: 0 0 0 5px;
+        z-index: 1;
+        box-shadow: rgba(213, 93, 146, 0.35) 0px 5px 15px;
+    }
+
+}
+
+.list {
+    width: 20em;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: none;
+
+    @media(max-width: 768px) {
+        flex-direction: row-reverse;
+        &:nth-child(1){
+            margin-top: 4px;
+        }
+        .link {
+            display: none;
+        }
+
+    }
+}
+
 .activeLink {
-    border-bottom: 1px solid #d295bf;
+    border-bottom: 1px solid #d55d92;
     padding-bottom: 3px;
 }
