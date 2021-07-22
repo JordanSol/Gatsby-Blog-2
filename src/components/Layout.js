@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
-import Navbar from './navbar/Navbar'
+import Navbar from './Navbar'
 import '../styles/index.scss'
 
 import * as styles from './Layout.module.scss'
