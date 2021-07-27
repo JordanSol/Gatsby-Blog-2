@@ -13,8 +13,14 @@ const ContactPage = () => {
                     <EmailForm/>
                     <div className={styles.socials}>
                         <h3>Socials</h3>
-                        <AiFillGithub className={styles.icon}/>
-                        <AiFillLinkedin className={styles.icon}/>
+                        <a href="https://github.com/JordanSol"
+                        target="_blank" rel="noopener noreferrer">
+                            <AiFillGithub className={styles.icon}/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jordan-freeman-36417a218/"
+                        target="_blank" rel="noopener noreferrer">
+                            <AiFillLinkedin className={styles.icon}/>
+                        </a>
                     </div>
                 </div>
             </Layout>

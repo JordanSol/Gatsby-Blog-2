@@ -7,10 +7,13 @@
     padding: 2rem;
     border-bottom: 3px solid #ac46a1;
     margin-right: 3em;
+    @media(max-width: 768px){
+        margin-right: 0;
+        width: 75%;
+    }
 }
 
 h3 {
-    color: #eb7aab;
     font-size: 1.8rem;
 }
 
