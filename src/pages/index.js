@@ -24,7 +24,7 @@ const IndexPage = () => {
               <Link className={styles.contactButton} to="/contact">Contact me →</Link>
             </div>
             <div className={styles.testimonial}>
-              <h3 className={styles.gradientText}>Testimonials</h3>
+              <h3 className={styles.gradientText}>About Me</h3>
               <p>As a developer and tech enthusiast, <br/>
               my goal is to help create a better, more intuitive web. <br/>
               By using tools such as
