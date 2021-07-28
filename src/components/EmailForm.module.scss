@@ -1,12 +1,24 @@
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 .emailForm {
+    animation: fadeInLeft 1s;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 48%;
     line-height: 3rem;
     background-color: #10071d;
     padding: 2rem;
     border-bottom: 3px solid #ac46a1;
-    margin-right: 3em;
     @media(max-width: 768px){
         margin-right: 0;
         width: 75%;
@@ -24,10 +36,15 @@ input {
     border-bottom: 1px solid #ac46a1;
     margin-bottom: 1.5rem;
     color: whitesmoke;
+    transition: all 0.2s;
     
     &::placeholder {
         color: whitesmoke;
         padding: 5px;
+    }
+
+    &:hover {
+        background-color: #22103d;
     }
 }
 
@@ -40,9 +57,15 @@ input {
     margin-bottom: 1.5rem;
     color: whitesmoke;
     padding: 5px;
+    transition: all 0.2s;
+
     &::placeholder {
         color: whitesmoke;
         padding: 5px;
+    }
+
+    &:hover {
+        background-color: #22103d;
     }
 }
 
@@ -52,6 +75,7 @@ input {
     border-radius: 4px;
     transition: all 0.1s ease-in;
     margin-bottom: 0;
+
     &:hover {
         background-color: #ee78ab;
         cursor: pointer;

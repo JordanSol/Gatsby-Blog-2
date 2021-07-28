@@ -1,8 +1,32 @@
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+}
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 .container {
     margin-top: 5em;
 }
 
 .title {
+    animation: fadeInLeft 0.7s;
     display: inline-block;
     font-size: 4rem;
     padding-bottom: 0.5rem;
@@ -23,6 +47,7 @@
 }
 
 .post {
+    animation: fadeInRight 1s;
     margin: 2rem 0;
 
     a {
