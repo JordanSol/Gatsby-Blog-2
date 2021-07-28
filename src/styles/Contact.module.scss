@@ -80,6 +80,11 @@
 
 .icon {
     color: whitesmoke;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+        color: #e991b7;
+    }
     &:nth-of-type(1) {
         margin-bottom: 2rem;
     }

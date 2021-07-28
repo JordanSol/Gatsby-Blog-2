@@ -58,7 +58,13 @@
         color: whitesmoke;
         margin: 0 0.5rem;
         text-decoration: none;
-        transition: all 0.3s ease-in;
+        transition: color 0.3s ease-in;
+        transition: border-bottom 0.3s ease-in;
+        
+        @media(max-width: 768px) {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
 
         &:active {
             color: #d55d92;
@@ -68,12 +74,9 @@
         &:hover {
             color: #d55d92;
             border-bottom: 1px solid #d55d92;
+            margin-bottom: 14px;
         }
 
-        @media(max-width: 768px) {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-        }
     }
 }
 

@@ -1,3 +1,18 @@
+@keyframes riseInFade {
+    0% {
+        transform: translateY(15%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: riseInFade 0.7s;
+}
+
 .title {
     display: inline-block;
     font-size: 3rem;
