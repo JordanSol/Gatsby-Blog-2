@@ -74,7 +74,10 @@
         &:hover {
             color: #d55d92;
             border-bottom: 1px solid #d55d92;
-            margin-bottom: 14px;
+            
+            @media(max-width: 768px){
+                margin-bottom: 14px;
+            }
         }
 
     }
