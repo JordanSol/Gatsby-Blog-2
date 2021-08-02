@@ -1,0 +1,57 @@
+.card {
+    display: block;
+    text-align: center;
+    background-color: #10071d;
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 1em 0;
+    width: 30rem;
+    height: auto;
+    transition-property: transform, box-shadow;
+    transition-duration: 0.2s;
+    border-bottom: 3px solid #ac46a1;
+
+    @media(max-width: 768px) {
+        width: 20rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        display: inline-block;
+        background-image: linear-gradient(90deg, rgb(173, 67, 192) 0%, rgb(234,105,139) 100%);
+        background-clip: text;
+        color: transparent;
+        padding-bottom: 0.5rem;
+    }
+
+    p {
+        font-weight: 200;
+        font-style: italic;
+        color: #bfbfbf;
+    }
+}
+
+.cardHover {
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: rgba(234, 105, 139,0.5) 0px 3px 15px;
+    }
+}
+
+.button {
+    padding: 0.5em 0.7em;
+    position: relative;
+    color: #d55d92;
+    background-color: #140925;
+    text-decoration: none;
+    border: 2px solid #d55d92;
+    border-radius: 3px;
+    transition: all 0.3s;
+    animation: fadeInLeft 1s;
+    z-index: 0;
+    
+    &:hover {
+        cursor: pointer;
+        background-color: #983aa856;
+    }
+}

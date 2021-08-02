@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from 'gatsby'
 
 import Layout from "../components/Layout"
+import Projects from '../components/Projects'
 import * as styles from '../styles/Home.module.scss'
 import portrait from '../images/portrait.jpg'
 
@@ -26,14 +27,16 @@ const IndexPage = () => {
             <div className={styles.testimonial}>
               <h3 className={styles.gradientText}>About Me</h3>
               <p>As a developer and tech enthusiast, <br/>
-              my goal is to help create a better, more intuitive web. <br/>
+              my goal is to help create better, more intuitive web experiences. <br/>
               By using tools such as
               <span className={styles.gradientText}> HTML, CSS, SASS, ReactJS, Gatsby,
-              and GraphQL,</span> I work to create beautiful user experiences.</p>
+              and GraphQL,</span> I work to create beautiful websites.
+              </p>
             </div>
           </div>
           <div className={styles.projects}>
             <h1><span className={styles.gradientText}>Projects</span></h1>
+            <Projects/>
           </div>
         </div>
       </Layout>
