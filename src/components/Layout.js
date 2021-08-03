@@ -15,8 +15,8 @@ const Layout = (props) => {
             <div className={styles.content}>
                 <Navbar/>
                 {props.children}
+                <Footer/>
             </div>
-            <Footer/>
         </div>
     )
 }
