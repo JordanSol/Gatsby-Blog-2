@@ -1,19 +1,19 @@
 const particlesConfig = {
     particles: {
       number: {
-        value: 25,
+        value: 35,
         density: {
           enable: true,
-          value_area: 900
+          value_area: 800
         }
       },
       color: {
         value: "#ffffff"
       },
       shape: {
-        type: "triangle",
+        type: "circle",
         stroke: {
-          width: 0,
+          width: 2,
           color: "#ffffff"
         },
         polygon: {
@@ -31,7 +31,7 @@ const particlesConfig = {
         anim: {
           enable: false,
           speed: 1,
-          opacity_min: 0.1,
+          opacity_min: 0.3,
           sync: false
         }
       },
@@ -49,7 +49,7 @@ const particlesConfig = {
         enable: true,
         distance: 200,
         color: "#ffffff",
-        opacity: 0.1,
+        opacity: 0.2,
         width: 1
       },
       move: {
