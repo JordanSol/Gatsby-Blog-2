@@ -21,8 +21,8 @@ const EmailForm = () => {
         <form className={styles.emailForm} onSubmit={sendEmail}>
             <h3>Send me an Email, don't be shy!</h3>
             <input type="hidden" name="contact_number" />
-            <input type="text" name="name" placeholder="Name" className={styles.name}/>
-            <input type="email" name="email" placeholder="Email" className={styles.email} />
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
             <textarea name="message" placeholder="Message" className={styles.message}/>
             <input type="submit" value="Send" className={styles.send}/>
         </form>

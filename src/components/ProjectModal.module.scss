@@ -37,7 +37,7 @@
     position: fixed;
     top: 50;
     left: 50;
-    z-index: 10;
+    z-index: 999;
     animation: fadeInLeft 1s;
 
     @media(max-width: 1000px) {

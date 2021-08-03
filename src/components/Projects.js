@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import * as styles from './Projects.module.scss'
 import { SiJavascript, SiSass, SiCss3, SiReact, SiMaterialUi, SiHtml5 } from 'react-icons/si'
 import tracker from '../images/Covid-Tracker.gif'
