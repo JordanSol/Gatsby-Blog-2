@@ -49,14 +49,16 @@ const options = {
 const Blog = ({data}) => {
     return (
         <Layout>
-            <div className={styles.container}>
-                <h1 className={styles.title}>{data.contentfulBlogPost.title}</h1>
-                <p className={styles.date}>{data.contentfulBlogPost.publishedDate}</p>
-                <hr className={styles.divider}/>
-                <div className={styles.content}>
-                    {renderRichText(data.contentfulBlogPost.body, options)}
-                </div>
-            </div>
+          <div className={styles.container}>
+            <section className={styles.article}>
+              <h1 className={styles.title}>{data.contentfulBlogPost.title}</h1>
+              <p className={styles.date}>{data.contentfulBlogPost.publishedDate}</p>
+              <hr className={styles.divider}/>
+              <div className={styles.content}>
+                  {renderRichText(data.contentfulBlogPost.body, options)}
+              </div>
+            </section>
+          </div>
         </Layout>
     )
 }

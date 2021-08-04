@@ -10,14 +10,27 @@
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+}
+
+.article {
     animation: riseInFade 0.7s;
+    width: 75%;
+    background-color: #10071d;
+    padding: 2em;
+    margin-top: 5em;
+    line-height: 2rem;
+    @media(max-width: 768px) {
+        width: 85%;
+        text-align: center;
+    }
 }
 
 .title {
     display: inline-block;
     font-size: 3rem;
-    padding-bottom: 0.5rem;
-    margin-top: 2em;
+    margin-bottom: 1rem;
     background-image: linear-gradient(90deg, rgb(173, 67, 192) 0%, rgba(234,105,139,1) 100%);
     background-clip: text;
     color: transparent;
@@ -27,7 +40,7 @@
     font-weight: 200;
     font-style: italic;
     color: #bfbfbf;
-    margin-bottom: 2rem
+    margin-bottom: 1.7rem
 }
 
 .divider {
