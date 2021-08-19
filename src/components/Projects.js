@@ -3,7 +3,7 @@ import * as styles from './Projects.module.scss'
 import { SiJavascript, SiSass, SiCss3, SiReact, SiMaterialUi, SiHtml5, SiNextDotJs, SiTailwindcss } from 'react-icons/si'
 import tracker from '../images/Covid-Tracker.gif'
 import list from '../images/Reading-List.gif'
-import HuluClone from '../images/HuluClone.gif'
+import HuluClone from '../images/Hulu.gif'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
