@@ -1,12 +1,21 @@
 import React from 'react'
 import * as styles from './Projects.module.scss'
-import { SiJavascript, SiSass, SiCss3, SiReact, SiMaterialUi, SiHtml5 } from 'react-icons/si'
+import { SiJavascript, SiSass, SiCss3, SiReact, SiMaterialUi, SiHtml5, SiNextDotJs, SiTailwindcss } from 'react-icons/si'
 import tracker from '../images/Covid-Tracker.gif'
 import list from '../images/Reading-List.gif'
+import HuluClone from '../images/HuluClone.gif'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
     const projects = [
+        {
+            title: 'Hulu Clone',
+            description: 'Hulu UI clone made with Next.js and movie data pulled from themoviedb.',
+            image: HuluClone,
+            code: 'https://github.com/JordanSol/hulu-clone',
+            link: 'https://jf-hulu.netlify.app/',
+            stack: [<SiNextDotJs/>, <SiReact/>, <SiJavascript/>,<SiHtml5/>]
+        },
         {
             title: 'Covid Tracker App',
             description: 'A simple web app for tracking current world Covid-19 stats.',

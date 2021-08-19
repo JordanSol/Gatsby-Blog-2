@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { SiJavascript, SiSass, SiCss3, SiReact, SiMaterialUi, SiHtml5, SiGatsby, SiPython, SiNodeDotJs, SiGit, SiGithub} from 'react-icons/si'
+import { SiJavascript, SiSass, SiCss3, SiReact, SiMaterialUi, SiHtml5, SiGatsby, SiPython, SiNodeDotJs, SiGit, SiGithub, SiNextDotJs, SiTailwindcss} from 'react-icons/si'
 import Layout from '../components/Layout'
 import * as styles from '../styles/About.module.scss'
 import portrait from '../images/mirror-portrait.jpg'
@@ -35,6 +35,7 @@ const AboutPage = () => {
                         <li><SiCss3/></li>
                         <li><SiJavascript/></li>
                         <li><SiReact/></li>
+                        <li><SiNextDotJs/></li>
                         <li><SiSass/></li>
                         <li><SiMaterialUi/></li>
                         <li><SiNodeDotJs/></li>
@@ -42,6 +43,7 @@ const AboutPage = () => {
                         <li><SiPython/></li>
                         <li><SiGit/></li>
                         <li><SiGithub/></li>
+                        <li><SiTailwindcss/></li>
                     </ul>
                 </section>
             </div>
