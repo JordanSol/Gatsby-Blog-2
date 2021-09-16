@@ -9,7 +9,7 @@ const ProjectModal = ({ project, toggle, toggleModal }) => {
                 <div className={styles.modal}>
                     {project.image && <img src={project.image} alt="Preview gif" />}
                     {project.video && 
-                        <video controls>
+                        <video width="100%" height="100%" controls>
                             <source src={project.video} type="video/mp4"/>
                         </video>
                     }
