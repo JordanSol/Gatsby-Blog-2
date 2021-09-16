@@ -7,7 +7,12 @@ const ProjectModal = ({ project, toggle, toggleModal }) => {
         <div>
             {toggleModal ? <div className={styles.background}>
                 <div className={styles.modal}>
-                    <img src={project.image} alt="Preview gif" />
+                    {project.image && <img src={project.image} alt="Preview gif" />}
+                    {project.video && 
+                        <video controls>
+                            <source src={project.video} type="video/mp4"/>
+                        </video>
+                    }
                     <section>
                         <span className={styles.x}>
                             <a href="/" 

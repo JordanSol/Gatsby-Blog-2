@@ -3,7 +3,7 @@ import * as styles from './Projects.module.scss'
 import { SiJavascript, SiSass, SiCss3, SiReact, SiMaterialUi, SiHtml5, SiNextDotJs, SiTailwindcss } from 'react-icons/si'
 import tracker from '../images/Covid-Tracker.gif'
 import list from '../images/Reading-List.gif'
-import HuluClone from '../images/Hulu.gif'
+import HuluClone from '../images/Hulu.mp4'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
@@ -11,7 +11,8 @@ const Projects = () => {
         {
             title: 'Hulu Clone',
             description: 'Hulu UI clone made with Next.js and movie data pulled from themoviedb.',
-            image: HuluClone,
+            image: null,
+            video: HuluClone,
             code: 'https://github.com/JordanSol/hulu-clone',
             link: 'https://jf-hulu.netlify.app/',
             stack: [<SiNextDotJs/>, <SiReact/>, <SiJavascript/>,<SiHtml5/>]

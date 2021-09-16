@@ -30,7 +30,8 @@ const IndexPage = () => {
               my goal is to help create better, more intuitive web experiences. <br/>
               By using tools such as
               <span className={styles.gradientText}> HTML, CSS, SASS, ReactJS, Gatsby,
-              and GraphQL,</span> I work to create beautiful websites.
+              and GraphQL,</span> I work to create beautiful websites. <br/>
+              I will bring high energy, creative solutions, and clean code to your team.
               </p>
             </div>
           </div>
